@@ -1,7 +1,7 @@
 ---
 
 import { Image } from "astro:assets";
-import logo from "../assets/images/header-logo.png"
+import logo from "../assets/images/logo.png"
 
 
 ---
@@ -9,14 +9,21 @@ import logo from "../assets/images/header-logo.png"
 
 <header class="header" > 
     <div class="container">
-        <div class="row">
-            <div class="col-6 col-lg-3">
-                <a class="text-decoration-none" href="/">
+        <div class="row align-items-center">
+            <div class="col-6 col-lg-4">
+                <a class="text-decoration-none logo-area" href="/">
                     <Image src={logo}  class={'img-fluid logo' } alt={'logo'} title={'logo'} />
                 </a>
             </div>
-            <div class="col-6 col-lg-6">
-                <h1>John Doe</h1>
+            <div class="col-6 col-lg-8">
+                <div class="flex-btn-area">
+                    <div class="">
+                        <a href="#" class="primary-btn">
+                            <i class="fa-solid fa-phone"></i>
+                            123-123-0000
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
