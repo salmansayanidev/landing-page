@@ -8,12 +8,44 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family:"QanelasMedium.otf";
+  src: url(../fonts/qanelas/QanelasMedium.otf);
+}
+
+:root {
+  --qanelas-medium : "QanelasMedium.otf";
+}
+
+
+
 html {
   background-color: black;
   font-size: 10px;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: 700;
+/* header css */
+.header {
+  background-color: black;
 }
+
+.logo-area {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 20px 15px #00000087;
+  border-radius: 0 0 23px 23px;
+  padding: 20px 20px;
+  opacity: 1;
+  width: 100%;
+  max-width: 334px;
+}
+.primary-btn {
+  font-family: var(--qanelas-medium);
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  
+}
+
