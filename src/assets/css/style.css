@@ -9,15 +9,15 @@ body {
 }
 
 @font-face {
-  font-family:"QanelasMedium.otf";
-  src: url(../fonts/qanelas/QanelasMedium.otf);
+  font-family: "QanelasRegular.otf";
+  src: url(../fonts/qanelas/QanelasRegular.otf);
 }
 
 :root {
-  --qanelas-medium : "QanelasMedium.otf";
+  --qanelas: "QanelasRegular.otf";
+  --blue : #2F5EFF;
+  --dusty-blue : #587B90;
 }
-
-
 
 html {
   background-color: black;
@@ -26,7 +26,12 @@ html {
 
 /* header css */
 .header {
-  background-color: black;
+  background-color:transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 33;
 }
 
 .logo-area {
@@ -35,17 +40,154 @@ html {
   justify-content: center;
   box-shadow: 0px 20px 15px #00000087;
   border-radius: 0 0 23px 23px;
-  padding: 20px 20px;
+  padding: 2rem;
   opacity: 1;
   width: 100%;
   max-width: 334px;
 }
+.flex-btn-area {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+}
 .primary-btn {
-  font-family: var(--qanelas-medium);
-  font-size: 2rem;
   color: white;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  border: 1.5px solid white;
+  border-radius: 50px;
+  width: fit-content;
+  overflow: hidden;
+  height: 48px;
   position: relative;
-  
+}
+.primary-btn::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  background-color: var(--blue);
+  transition: 0.5s all;
+  height: 100%;
+  border-radius: 50px;
+}
+.primary-btn:hover::before {
+  width: 100%;
+}
+.primary-btn-icon {
+  height: 48px;
+  width: 48px;
+  font-size: 2rem;
+  border-radius: 100%;
+  color: white;
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 11;
+}
+.primary-btn-text {
+  font-size: 2rem;
+  font-family: var(--qanelas);
+  font-weight: 600;
+  color: white;
+  padding: 1rem 2rem  1rem 2.2rem;
+  position: relative;
+  z-index: 11;
+  text-transform: uppercase;
+}
+.primary-btn.btn-2 .primary-btn-icon {
+  background-color: var(--dusty-blue);
+}
+.primary-btn.btn-2::before {
+  background-color: var(--dusty-blue);
 }
 
+/* banner area */
+
+.para {
+  font-size: 3.2rem;
+  font-family: var(--qanelas);
+  font-weight: 400;
+  color: white;
+}
+.sec-title {
+  font-size: 4.3rem;
+  font-family: var(--qanelas);
+  font-weight: 700;
+  color: white;
+
+}
+.banner-layers {
+  padding: 22rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sec-sb-title {
+  font-size: 5.9rem;
+  font-family: var(--qanelas);
+  font-weight: 600;
+  color: white;
+}
+.banner-imgs-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+/* .banner-imgs-area .banner-mobile:nth-child(2) img {
+  transform: scale(1.1);
+} */
+.bnner-slider-btn-area {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+.bnner-slider-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: white;
+  color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.bnner-slider-btn.swiper-button-disabled {
+  opacity: 60%;
+}
+.banner-mobile .bnner-mobile-img {
+  transform: scale(0);
+  opacity: 0;
+}
+.banner-mobile:nth-child(1) .bnner-mobile-img {
+  transition: 0.3s ;
+}
+.banner-mobile:nth-child(2) .bnner-mobile-img {
+  transition: 0.3s 0.4s;
+}
+.banner-mobile:nth-child(3) .bnner-mobile-img {
+  transition: 0.3s 0.8s;
+}
+.swiper-slide.banner-layers.swiper-slide-active .banner-mobile:nth-child(1) .bnner-mobile-img {
+  opacity: 1;
+  transform: scale(1);
+}
+.swiper-slide.banner-layers.swiper-slide-active .banner-mobile:nth-child(2) .bnner-mobile-img {
+  opacity: 1;
+  transform: scale(1.1);
+} 
+.swiper-slide.banner-layers.swiper-slide-active .banner-mobile:nth-child(3) .bnner-mobile-img {
+  opacity: 1;
+  transform: scale(1);
+} 
