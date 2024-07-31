@@ -11,6 +11,9 @@ import BnnerMobile1 from '../assets/images/bnner-mobile-1.png'
 import BnnerMobile2 from '../assets/images/bnner-mobile-2.png'
 import BnnerMobile4 from '../assets/images/bnner-mobile-4.png'
 import BnnerMobile5 from '../assets/images/bnner-mobile-5.png'
+import Logo1 from "../assets/images/brand-logo/logo1.png"
+
+
 const BannerImg1 = await getImage({src: Bannerbg1})
 const BannerImg2 = await getImage({src: Bannerbg2})
 
@@ -38,6 +41,43 @@ const BannerImg2 = await getImage({src: Bannerbg2})
 				</div>
 			</div>
 		</section>
+
+		<section class="logo-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="logo-slider">
+							<div class="swiper-wrapper">  
+								<div class="logo-slider-layer swiper-slide">
+									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
+								</div>
+								<div class="logo-slider-layer swiper-slide">
+									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
+								</div>
+								<div class="logo-slider-layer swiper-slide">
+									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
+								</div>
+								<div class="logo-slider-layer swiper-slide">
+									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
+								</div>
+								<div class="logo-slider-layer swiper-slide">
+									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
+								</div>
+								<div class="logo-slider-layer swiper-slide">
+									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
+								</div>
+								<div class="logo-slider-layer swiper-slide">
+									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
+								</div>
+								<div class="logo-slider-layer swiper-slide">
+									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -59,6 +99,30 @@ const BannerImg2 = await getImage({src: Bannerbg2})
 			clickable: true,
 			},
 		});
+
+		var swiper = new Swiper(".logo-slider", {
+			slidesPerView: 1,
+			spaceBetween: 10,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			breakpoints: {
+				640: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+				},
+				768: {
+				slidesPerView: 4,
+				spaceBetween: 40,
+				},
+				1024: {
+				slidesPerView: 6,
+				spaceBetween: 70,
+				},
+			},
+			});
+
 	</script>
 
 </Layout>
