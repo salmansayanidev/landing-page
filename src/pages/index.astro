@@ -1,11 +1,67 @@
 ---
+import {  Image , getImage } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+import Banner from "../components/Banner.astro"
+
+import Arrowright from "../assets/images/arrow-right.png"
+import Arrowleft from "../assets/images/arrow-left.png"
+import Bannerbg1 from "../assets/images/banner-img-1.png"
+import Bannerbg2 from "../assets/images/banner-img-2.png"
+import BnnerMobile1 from '../assets/images/bnner-mobile-1.png'
+import BnnerMobile2 from '../assets/images/bnner-mobile-2.png'
+import BnnerMobile4 from '../assets/images/bnner-mobile-4.png'
+import BnnerMobile5 from '../assets/images/bnner-mobile-5.png'
+const BannerImg1 = await getImage({src: Bannerbg1})
+const BannerImg2 = await getImage({src: Bannerbg2})
+
 ---
 
 <Layout title="landing-page">
 	<main>
-		
+		<section class="banner-sec">
+			<div class="swiper bnner-slider">
+				<div class="swiper-wrapper">
+					<div style=`background-image: url(${BannerImg1.src});` class="swiper-slide banner-layers">
+						<Banner  para='We Are Rated Top' sectitle='App Development Company' secsbtitle='Prominent AR/VR App Company In USA' href1='#' href2='#' BannerImages={[ BnnerMobile1 , BnnerMobile2 , BnnerMobile1 ]} />
+					</div>
+					<div style=`background-image: url(${BannerImg2.src});` class="swiper-slide banner-layers">
+						<Banner  para='We Are Rated Top' sectitle='App Development Company' secsbtitle='We build iOS & Android Apps that people love' href1='#' href2='#' BannerImages={[ BnnerMobile4 , BnnerMobile5 , BnnerMobile4 ]} />
+					</div>
+				</div>	
+				<div class="bnner-slider-btn-area">
+					<button type="button" class="bnner-slider-btn prev-btn">
+						<Image src={Arrowleft}  class={'img-fluid'} alt={'arrow-left'} />
+					</button>
+					<button type="button" class="bnner-slider-btn next-btn">
+						<Image src={Arrowright}  class={'img-fluid'} alt={'arrow-right'} />
+					</button>
+				</div>
+			</div>
+		</section>
 	</main>
+
+	<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<script is:inline>
+		var swiper = new Swiper(".bnner-slider", {
+			spaceBetween: 30,
+			speed: 700,
+			// autoplay: {
+			// 	delay: 2500,
+			// },
+			effect: "fade",
+			navigation: {
+			nextEl: ".next-btn",
+			prevEl: ".prev-btn",
+			},
+			pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+			},
+		});
+	</script>
+
 </Layout>
+
 
 
