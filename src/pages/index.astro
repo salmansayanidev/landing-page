@@ -5,13 +5,32 @@ import Banner from "../components/Banner.astro"
 
 import Arrowright from "../assets/images/arrow-right.png"
 import Arrowleft from "../assets/images/arrow-left.png"
+
+
 import Bannerbg1 from "../assets/images/banner-img-1.png"
 import Bannerbg2 from "../assets/images/banner-img-2.png"
+
+
 import BnnerMobile1 from '../assets/images/bnner-mobile-1.png'
 import BnnerMobile2 from '../assets/images/bnner-mobile-2.png'
 import BnnerMobile4 from '../assets/images/bnner-mobile-4.png'
 import BnnerMobile5 from '../assets/images/bnner-mobile-5.png'
+
+
 import Logo1 from "../assets/images/brand-logo/logo1.png"
+import Logo2 from "../assets/images/brand-logo/logo2.png"
+import Logo3 from "../assets/images/brand-logo/logo3.png"
+import Logo4 from "../assets/images/brand-logo/logo4.png"
+import Logo5 from "../assets/images/brand-logo/logo5.png"
+import Logo6 from "../assets/images/brand-logo/logo6.png"
+
+
+import Serimg from "../assets/images/our-ser-img.png"
+import Serlottieimg from "../assets/images/ser-lottie-img.png"
+import Serrightimg from "../assets/images/ourser-right-img.png"
+import Sersvg1 from "../assets/images/ser-svgs/ser1.svg"
+import Sersvg2 from "../assets/images/ser-svgs/ser2.svg"
+import Sersvg3 from "../assets/images/ser-svgs/ser3.svg"
 
 
 const BannerImg1 = await getImage({src: Bannerbg1})
@@ -52,25 +71,25 @@ const BannerImg2 = await getImage({src: Bannerbg2})
 									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
 								</div>
 								<div class="logo-slider-layer swiper-slide">
-									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
+									<Image src={Logo2} class={"img-fluid brand-logo"} alt={"brnd-logo-2"} />
+								</div>
+								<div class="logo-slider-layer swiper-slide">
+									<Image src={Logo3} class={"img-fluid brand-logo"} alt={"brnd-logo-3"} />
+								</div>
+								<div class="logo-slider-layer swiper-slide">
+									<Image src={Logo4} class={"img-fluid brand-logo"} alt={"brnd-logo-4"} />
+								</div>
+								<div class="logo-slider-layer swiper-slide">
+									<Image src={Logo5} class={"img-fluid brand-logo"} alt={"brnd-logo-5"} />
+								</div>
+								<div class="logo-slider-layer swiper-slide">
+									<Image src={Logo6} class={"img-fluid brand-logo"} alt={"brnd-logo-6"} />
 								</div>
 								<div class="logo-slider-layer swiper-slide">
 									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
 								</div>
 								<div class="logo-slider-layer swiper-slide">
-									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
-								</div>
-								<div class="logo-slider-layer swiper-slide">
-									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
-								</div>
-								<div class="logo-slider-layer swiper-slide">
-									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
-								</div>
-								<div class="logo-slider-layer swiper-slide">
-									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
-								</div>
-								<div class="logo-slider-layer swiper-slide">
-									<Image src={Logo1} class={"img-fluid brand-logo"} alt={"brnd-logo-1"} />
+									<Image src={Logo2} class={"img-fluid brand-logo"} alt={"brnd-logo-2"} />
 								</div>
 							</div>
 						</div>
@@ -78,6 +97,156 @@ const BannerImg2 = await getImage({src: Bannerbg2})
 				</div>
 			</div>
 		</section>
+
+		<section class="our-ser-sec">
+			<Image src={Serrightimg} class={"img-fluid ser-right-img"} alt={"ser-right-img"} />
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-12 col-md-5">
+						<div class="ser-stick-area">
+							<div class="">
+								<div class="ser-img-arae">
+									<Image src={Serimg} class={"img-fluid our-ser-img"} alt={"our-ser"} />
+									<Image src={Serlottieimg} class={"img-fluid ser-lottie-img"} alt={"ser-lottie"} />
+								</div>
+								<div class="flex-btn-area service justify-content-start">
+									<div class="">
+										<a href="#" class="primary-btn">
+											<span class="primary-btn-icon">
+												<i class="fa-solid fa-phone-volume"></i>
+											</span>
+											<span class="primary-btn-text">
+												123-123-0000
+											</span>
+										</a>
+									</div>
+									<div class="">
+										<a href="#" class="primary-btn btn-2">
+											<span class="primary-btn-icon">
+												<i class="fa-solid fa-phone-volume"></i>
+											</span>
+											<span class="primary-btn-text">
+												live chat
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="services-list-area">
+							<h3 class="para text-center">Our Services</h3>
+							<h1 class="sec-title text-center mb-5">Mobile & Web App Development for Startups and Enterprises</h1>
+							<div class="service-box">
+								<h2 class="ser-count">01</h2>
+								<div class="">
+									<div class="d-flex justify-content-between">
+										<h3 class="ser-title">iOS App <br> Development</h3>
+										<Image src={Sersvg1} class={'img-fluid ser-svg'}  alt={'sersvg1'}/>
+									</div>
+									<p class="para-sm">We work together to lead to executing great ideas and even better outcomes.</p>
+								</div>
+							</div>
+							<div class="service-box">
+								<h2 class="ser-count">02</h2>
+								<div class="">
+									<div class="d-flex justify-content-between">
+										<h3 class="ser-title">Android App <br> Development</h3>
+										<Image src={Sersvg2} class={'img-fluid ser-svg'}  alt={'sersvg2'}/>
+									</div>
+									<p class="para-sm">We work together to lead to executing great ideas and even better outcomes.</p>
+								</div>
+							</div>
+							<div class="service-box">
+								<h2 class="ser-count">03</h2>
+								<div class="">
+									<div class="d-flex justify-content-between">
+										<h3 class="ser-title">Cross-Platform <br> App Development</h3>
+										<Image src={Sersvg3} class={'img-fluid ser-svg'}  alt={'sersvg3'}/>
+									</div>
+									<p class="para-sm">We work together to lead to executing great ideas and even better outcomes.</p>
+								</div>
+							</div>
+							<div class="service-box">
+								<h2 class="ser-count">04</h2>
+								<div class="">
+									<div class="d-flex justify-content-between">
+										<h3 class="ser-title">iOS App <br> Development</h3>
+										<Image src={Sersvg1} class={'img-fluid ser-svg'}  alt={'sersvg1'}/>
+									</div>
+									<p class="para-sm">We work together to lead to executing great ideas and even better outcomes.</p>
+								</div>
+							</div>
+							<div class="service-box">
+								<h2 class="ser-count">05</h2>
+								<div class="">
+									<div class="d-flex justify-content-between">
+										<h3 class="ser-title">Android App <br> Development</h3>
+										<Image src={Sersvg2} class={'img-fluid ser-svg'}  alt={'sersvg2'}/>
+									</div>
+									<p class="para-sm">We work together to lead to executing great ideas and even better outcomes.</p>
+								</div>
+							</div>
+							<div class="service-box">
+								<h2 class="ser-count">06</h2>
+								<div class="">
+									<div class="d-flex justify-content-between">
+										<h3 class="ser-title">Cross-Platform <br> App Development</h3>
+										<Image src={Sersvg3} class={'img-fluid ser-svg'}  alt={'sersvg3'}/>
+									</div>
+									<p class="para-sm">We work together to lead to executing great ideas and even better outcomes.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="results-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 col-md-4 col-lg-2">
+						<div class="result-area">
+							<h1 class="result-count m-0">15+</h1>
+							<p class="para-sm m-0">Years of Experience</p>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<div class="result-area">
+							<h1 class="result-count m-0">350+</h1>
+							<p class="para-sm m-0">Apps Developed</p>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<div class="result-area">
+							<h1 class="result-count m-0">20+</h1>
+							<p class="para-sm m-0">Countries</p>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<div class="result-area">
+							<h1 class="result-count m-0">90%</h1>
+							<p class="para-sm m-0">Client Retention</p>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<div class="result-area">
+							<h1 class="result-count m-0">100%</h1>
+							<p class="para-sm m-0">Projects Delivered</p>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<div class="result-area">
+							<h1 class="result-count m-0">175+</h1>
+							<p class="para-sm m-0">Employees</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</main>
 
 	<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -101,8 +270,13 @@ const BannerImg2 = await getImage({src: Bannerbg2})
 		});
 
 		var swiper = new Swiper(".logo-slider", {
-			slidesPerView: 1,
-			spaceBetween: 10,
+			slidesPerView: 6,
+			speed: 700,
+			spaceBetween: 60,
+			autoplay: {
+				delay: 2000,
+			},
+			loop : true,
 			pagination: {
 				el: ".swiper-pagination",
 				clickable: true,
@@ -110,15 +284,15 @@ const BannerImg2 = await getImage({src: Bannerbg2})
 			breakpoints: {
 				640: {
 				slidesPerView: 2,
-				spaceBetween: 20,
+				// spaceBetween: 20,
 				},
 				768: {
 				slidesPerView: 4,
-				spaceBetween: 40,
+				// spaceBetween: 40,
 				},
 				1024: {
 				slidesPerView: 6,
-				spaceBetween: 70,
+				spaceBetween: 60,
 				},
 			},
 			});
