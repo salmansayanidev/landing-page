@@ -52,8 +52,17 @@ html {
   position: fixed;
   width: 100%;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 33;
+  transition: 0.4s;
+}
+.header-active {
+  background: rgb(255 255 255 / 70%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 20px 30px 10px #0000001f;
 }
 
 .logo-area {
@@ -97,6 +106,12 @@ html {
   border-radius: 50px;
 }
 .primary-btn:hover::before {
+  width: 100%;
+}
+.header-active .primary-btn::before {
+  width: 100%;
+}
+.header-active .primary-btn.btn-2::before {
   width: 100%;
 }
 .primary-btn-icon {
@@ -364,12 +379,29 @@ html {
   padding: 2rem 1rem;
   border-radius: 3rem;
   transition: 0.4s;
+  position: relative;
+  z-index: 22;
+  overflow: hidden;
 }
-.result-area:hover {
+.result-area::before {
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 0;
+  height: 0;
+  position: absolute;
   background-color: white;
+  transition: 0.4s 0.2s;
+  border-radius: 1rem;
+}
+.result-area:hover::before {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 .result-area .para-sm {
-  transition: 0.3s;
+  transition: 0.3s 0.2s
 }
 .result-area:hover :where(.para-sm,.result-count ) {
   color: var(--dusty-blue);
@@ -379,5 +411,5 @@ html {
   color: var(--blue);
   font-family: var(--qanelas);
   font-weight: 900;
-  transition: 0.3s;
+  transition: 0.3s 0.2s;
 }

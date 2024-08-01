@@ -5,9 +5,9 @@ import $ from "jquery"
 console.log("hello");
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-    if (scroll > 0) {
-        $(".header").addClass("active");
+    if (scroll <= 0) {
+        $(".header").removeClass("header-active");
     } else {
-        $(".header").removeClass("active");
+        $(".header").addClass("header-active");
     }    
 })
