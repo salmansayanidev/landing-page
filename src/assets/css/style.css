@@ -36,6 +36,8 @@ body {
 
 :root {
   --qanelas: "Qanelas";
+  --poppins : "Poppins", sans-serif;
+  --bebas : "Bebas Neue", sans-serif;
   --blue : #2F5EFF;
   --dusty-blue : #587B90;
   --bg-blue : #383C71;
@@ -44,6 +46,12 @@ body {
 html {
   background-color: black;
   font-size: 10px;
+}
+
+@media (min-width: 1401px) {
+  .container {
+    max-width: 1366px;
+  }
 }
 
 /* header css */
@@ -372,7 +380,7 @@ html {
 /* result section */
 .results-section {
   background-color: var(--bg-blue);
-  padding: 0 0 7rem;
+  padding: 0 0 10rem;
 }
 .result-area {
   text-align: center;
@@ -413,3 +421,82 @@ html {
   font-weight: 900;
   transition: 0.3s 0.2s;
 }
+
+/* consult section */
+.consult-section {
+  padding: 5rem 0;
+  background: rgb(12,29,81);
+  background: linear-gradient(90deg, rgba(12,29,81,1) 0%, rgba(17,44,145,1) 100%);
+}
+.para-2 {
+  font-size: 2.8rem;
+}
+.sm-title {
+  font-size: 5rem;
+  letter-spacing: -2.5px;
+  line-height: 1.2;
+}
+.form-field-area {
+  background-color: white;
+  max-width: 540px;
+  width: 100%;
+  border-radius: 100px;
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.primary-btn-2 {
+  background-color: var(--dusty-blue);
+  border-radius: 50px;
+  padding: 1.2rem 3.1rem;
+  font-size: 1.7rem;
+  font-family: var(--poppins);
+  font-weight: 500;
+  border: none;
+}
+.form-field {
+  font-size: 1.8rem;
+  color: black;
+  font-family: var(--poppins);
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  max-width: 320px;
+  padding: 1rem 0rem 1rem 2rem;
+  outline: none;
+}
+.form-field::placeholder {
+  color: #0E2267;
+  opacity: 27%;
+}
+.consult-img-area {
+  position: relative;
+}
+.consult-img-area {
+  position: relative;
+} 
+
+/* hd section */
+
+.hd-section {
+  padding: 3rem 0;
+  background: rgb(88,123,144);
+  background: linear-gradient(94deg, rgba(88,123,144,1) 0%, rgba(17,44,145,1) 100%);
+  margin-bottom: 50px;
+}
+.hd-title-area {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.hd-sec-title {
+  font-size: 6.7rem;
+  color: white;
+  font-family: var(--bebas);
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 3.35px;
+} 

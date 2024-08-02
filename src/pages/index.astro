@@ -33,6 +33,10 @@ import Sersvg2 from "../assets/images/ser-svgs/ser2.svg"
 import Sersvg3 from "../assets/images/ser-svgs/ser3.svg"
 
 
+import Consultimg from "../assets/images/consult-img.png"
+import Consultlottie from "../assets/images/consult-lottie.png"
+
+
 const BannerImg1 = await getImage({src: Bannerbg1})
 const BannerImg2 = await getImage({src: Bannerbg2})
 
@@ -242,6 +246,42 @@ const BannerImg2 = await getImage({src: Bannerbg2})
 							<h1 class="result-count m-0">175+</h1>
 							<p class="para-sm m-0">Employees</p>
 						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="consult-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-7">
+						<div class="consult-text-area">
+							<h3 class="para-2 para text-center mb-3">Just 15 mins of your time to see if we’re a good fit</h3>
+							<h2 class="sec-sb-title sm-title text-center mb-5">Not sure which Service is right for you?</h2>
+							<form action="">
+								<div class="d-flex justify-content-center align-items-center">
+									<div class="form-field-area">
+										<input class="form-field" placeholder="Email" type="email" name="" id="">
+										<button type="button" class="primary-btn-2 text-white">Consult Now</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-12 col-lg-5">
+						<div class="consult-img-area">
+							<Image src={Consultimg} class={"img-fluid consult-img"} alt={"consult-img"} />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="hd-section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="hd-sec-title">Our Developers Deliver Exceptional Results</h1>
 					</div>
 				</div>
 			</div>
