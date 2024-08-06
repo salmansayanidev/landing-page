@@ -393,14 +393,13 @@ html {
 }
 .result-area::before {
   content: "";
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% , -50%);
+  top: 0;
+  left: 0;
   width: 0;
   height: 0;
   position: absolute;
   background-color: white;
-  transition: 0.4s 0.2s;
+  transition: 0.4s;
   border-radius: 1rem;
 }
 .result-area:hover::before {
@@ -500,3 +499,11 @@ html {
   margin: 0;
   letter-spacing: 3.35px;
 } 
+.consult-img {
+  position: absolute;
+    top: 50%;
+    transform: translateY(-24%) translateX(-50%);
+    left: 50%;
+    width: 870px;
+    max-width: unset;
+}
