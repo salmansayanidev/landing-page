@@ -1,0 +1,14 @@
+---
+
+interface Props {
+	buttoncontent: string;
+}
+
+const { buttoncontent , classes } = Astro.props
+
+---
+
+
+<button type="button" class={`techstack-tab-btn ${classes}`}>
+    {buttoncontent}
+</button>
