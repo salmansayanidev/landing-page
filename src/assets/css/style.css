@@ -533,7 +533,6 @@ html {
   position: absolute;
   height: 100%;
   top: 0;
-  display: none;
 }
 .techstack-btn-list {
   display: flex;
@@ -587,6 +586,7 @@ html {
 }
 .techstack-main {
   display: none;
+  margin-bottom: 80px;
 }
 .techstack-main.active {
   display: block;
