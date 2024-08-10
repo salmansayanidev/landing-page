@@ -1,0 +1,15 @@
+---
+
+import { Image } from 'astro:assets';
+
+interface Props {
+	techstacksvg: string;
+}
+
+const { techstacksvg } = Astro.props
+
+---
+
+<div class="techstack-area">
+    <Image class={'img-fluid techstack-svg'}  src={techstacksvg} alt={'techstack svg'}/>
+</div>

@@ -175,7 +175,7 @@ html {
 
 }
 .banner-layers {
-  padding: 22rem 0;
+  padding: 20rem 0;
   background-repeat: no-repeat !important;
   background-size: cover !important;
 }
@@ -187,9 +187,8 @@ html {
 }
 .banner-imgs-area {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 30px;
 }
 /* .banner-imgs-area .banner-mobile:nth-child(2) img {
   transform: scale(1.1);
@@ -218,9 +217,13 @@ html {
 .bnner-slider-btn.swiper-button-disabled {
   opacity: 60%;
 }
+.banner-mobile {
+  width: 30%;
+}
 .banner-mobile .bnner-mobile-img {
   transform: scale(0);
   opacity: 0;
+  width: 100%;
 }
 .banner-mobile:nth-child(1) .bnner-mobile-img {
   transition: 0.3s ;
@@ -538,7 +541,7 @@ html {
   align-items: center;
   flex-wrap: wrap;
   padding: 0;
-  margin: 30px 0 0 0;
+  margin: 30px 0 50px;
   list-style: none;
 }
 .techstack-btn-area {
@@ -560,4 +563,31 @@ html {
 .techstack-tab-btn:hover , .techstack-tab-btn.active { 
   background-color: var(--blue);
   color: white;
+}
+.techstack-area {
+  height: 168px;
+  width: 168px;
+  border-radius: 50%;
+  background-color: var(--dusty-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  box-shadow: 0 10px 50px 0 #00000029;
+}
+.techstack-area:hover {
+  background-color: var(--blue);
+}
+.techstecks-list-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px 70px;
+}
+.techstack-main {
+  display: none;
+}
+.techstack-main.active {
+  display: block;
 }

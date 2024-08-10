@@ -4,11 +4,11 @@ interface Props {
 	buttoncontent: string;
 }
 
-const { buttoncontent , classes } = Astro.props
+const { buttoncontent , classes , dataview } = Astro.props
 
 ---
 
 
-<button type="button" class={`techstack-tab-btn ${classes}`}>
+<button data-view={dataview} type="button" class={`techstack-tab-btn ${classes}`}>
     {buttoncontent}
 </button>

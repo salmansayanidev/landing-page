@@ -20,15 +20,11 @@ var swiper = new Swiper(".hd-slider", {
   },
   speed: 10000,
   loop: true,
-  // freeMode: true,
 });
 
 var swiper = new Swiper(".bnner-slider", {
   spaceBetween: 30,
-  speed: 1000,
-  // autoplay: {
-  // 	delay: 2500,
-  // },
+  speed: 300,
   effect: "fade",
   navigation: {
     nextEl: ".next-btn",
@@ -55,15 +51,25 @@ var swiper = new Swiper(".logo-slider", {
   breakpoints: {
     640: {
       slidesPerView: 2,
-      // spaceBetween: 20,
     },
     768: {
       slidesPerView: 4,
-      // spaceBetween: 40,
     },
     1024: {
       slidesPerView: 6,
-      spaceBetween: 60,
     },
   },
+});
+
+const detailTabs = document.querySelectorAll("[data-view]");
+
+detailTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    detailTabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    $("[data-content]").removeClass("active");
+    $(`[data-content="${tab.dataset.view}"]`).addClass("active");
+    tab.classList.add("active");
+  });
 });
