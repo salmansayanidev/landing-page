@@ -3,6 +3,7 @@ import {  Image , getImage } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import Banner from "../components/Banner.astro"
 import Techstackbtn from '../components/techstack-buttons.astro'
+import Techstack from '../components/techstack.astro'
 
 import Arrowright from "../assets/images/arrow-right.png"
 import Arrowleft from "../assets/images/arrow-left.png"
@@ -10,12 +11,27 @@ import Arrowleft from "../assets/images/arrow-left.png"
 
 import Bannerbg1 from "../assets/images/banner-img-1.png"
 import Bannerbg2 from "../assets/images/banner-img-2.png"
+import Bannerbg3 from "../assets/images/banner-img-3.png"
+import Bannerbg4 from "../assets/images/banner-img-4.png"
+
+const BannerImg1 = await getImage({src: Bannerbg1})
+const BannerImg2 = await getImage({src: Bannerbg2})
+const BannerImg3 = await getImage({src: Bannerbg3})
+const BannerImg4 = await getImage({src: Bannerbg4})
 
 
 import BnnerMobile1 from '../assets/images/bnner-mobile-1.png'
 import BnnerMobile2 from '../assets/images/bnner-mobile-2.png'
+import BnnerMobile3 from '../assets/images/bnner-mobile-3.png'
 import BnnerMobile4 from '../assets/images/bnner-mobile-4.png'
 import BnnerMobile5 from '../assets/images/bnner-mobile-5.png'
+import BnnerMobile6 from '../assets/images/bnner-mobile-6.png'
+import BnnerMobile7 from '../assets/images/bnner-mobile-7.png'
+import BnnerMobile8 from '../assets/images/bnner-mobile-8.png'
+import BnnerMobile9 from '../assets/images/bnner-mobile-9.png'
+import BnnerMobile10 from '../assets/images/bnner-mobile-10.png'
+import BnnerMobile11 from '../assets/images/bnner-mobile-11.png'
+import BnnerMobile12 from '../assets/images/bnner-mobile-12.png'
 
 
 import Logo1 from "../assets/images/brand-logo/logo1.png"
@@ -33,14 +49,21 @@ import Sersvg2 from "../assets/images/ser-svgs/ser2.svg"
 import Sersvg3 from "../assets/images/ser-svgs/ser3.svg"
 
 
+import Techstacksvg1 from '../assets/images/techstack-svgs/svg1.svg'
+import Techstacksvg2 from '../assets/images/techstack-svgs/svg2.svg'
+import Techstacksvg3 from '../assets/images/techstack-svgs/svg3.svg'
+import Techstacksvg4 from '../assets/images/techstack-svgs/svg4.svg'
+import Techstacksvg5 from '../assets/images/techstack-svgs/svg5.svg'
+import Techstacksvg6 from '../assets/images/techstack-svgs/svg6.svg'
+import Techstacksvg7 from '../assets/images/techstack-svgs/svg7.svg'
+
 import Consultimg from "../assets/images/consult-img.png"
 // import Consultlottie from "../assets/images/consult-lottie.png"
 
 import TechstackImg from "../assets/images/techstack-right-img.png"
 
 
-const BannerImg1 = await getImage({src: Bannerbg1})
-const BannerImg2 = await getImage({src: Bannerbg2})
+
 
 ---
 
@@ -51,10 +74,16 @@ const BannerImg2 = await getImage({src: Bannerbg2})
 			<div class="swiper bnner-slider">
 				<div class="swiper-wrapper">
 					<div style=`background-image: url(${BannerImg1.src});` class="swiper-slide banner-layers">
-						<Banner  para='We Are Rated Top' sectitle='App Development Company' secsbtitle='Prominent AR/VR App Company In USA' href1='#' href2='#' BannerImages={[ BnnerMobile1 , BnnerMobile2 , BnnerMobile1 ]} />
+						<Banner  para='We Are Rated Top' sectitle='App Development Company' secsbtitle='Prominent AR/VR App Company In USA' href1='#' href2='#' BannerImages={[ BnnerMobile1 , BnnerMobile2 , BnnerMobile3 ]} />
 					</div>
 					<div style=`background-image: url(${BannerImg2.src});` class="swiper-slide banner-layers">
-						<Banner  para='We Are Rated Top' sectitle='App Development Company' secsbtitle='We build iOS & Android Apps that people love' href1='#' href2='#' BannerImages={[ BnnerMobile4 , BnnerMobile5 , BnnerMobile4 ]} />
+						<Banner  para='We Are Rated Top' sectitle='App Development Company' secsbtitle='We build iOS & Android Apps that people love' href1='#' href2='#' BannerImages={[ BnnerMobile4 , BnnerMobile5 , BnnerMobile6 ]} />
+					</div>
+					<div style=`background-image: url(${BannerImg3.src});` class="swiper-slide banner-layers">
+						<Banner  para='We Are Rated Top' sectitle='App Development Company' secsbtitle='Prominent AR/VR App Company In USA' href1='#' href2='#' BannerImages={[ BnnerMobile7 , BnnerMobile8 , BnnerMobile9 ]} />
+					</div>
+					<div style=`background-image: url(${BannerImg4.src});` class="swiper-slide banner-layers">
+						<Banner  para='We Are Rated Top' sectitle='App Development Company' secsbtitle='We build iOS & Android Apps that people love' href1='#' href2='#' BannerImages={[ BnnerMobile10 , BnnerMobile11 , BnnerMobile12 ]} />
 					</div>
 				</div>	
 				<div class="bnner-slider-btn-area">
@@ -311,21 +340,105 @@ const BannerImg2 = await getImage({src: Bannerbg2})
 					<div class="col-12">
 						<ul class="techstack-btn-list">
 							<li class="techstack-btn-area">
-								<Techstackbtn buttoncontent="mobile" classes="active" />
+								<Techstackbtn dataview="Mobile" buttoncontent="mobile" classes="active" />
 							</li>
 							<li class="techstack-btn-area">
-								<Techstackbtn buttoncontent="Full Stack" />
+								<Techstackbtn dataview="Full-Stack" buttoncontent="Full Stack" classes="" />
 							</li>
 							<li class="techstack-btn-area">
-								<Techstackbtn buttoncontent="Database" />
+								<Techstackbtn dataview="Database" buttoncontent="Database" classes="" />
 							</li>
 							<li class="techstack-btn-area">
-								<Techstackbtn buttoncontent="Backend" />
+								<Techstackbtn dataview="Backend" buttoncontent="Backend" classes="" />
 							</li>
 							<li class="techstack-btn-area">
-								<Techstackbtn buttoncontent="Block Chain" />
+								<Techstackbtn dataview="Block-Chain" buttoncontent="Block Chain" classes="" />
 							</li>
 						</ul>
+					</div>
+					<div class="col-12">
+						<div data-content="Mobile" class="techstack-main active">
+							<div class="techstecks-list-area">
+								<Techstack techstacksvg={Sersvg1} />
+								<Techstack techstacksvg={Techstacksvg1} />
+								<Techstack techstacksvg={Techstacksvg2} />
+								<Techstack techstacksvg={Techstacksvg3} />
+								<Techstack techstacksvg={Techstacksvg4} />
+								<Techstack techstacksvg={Techstacksvg5} />
+								<Techstack techstacksvg={Techstacksvg6} />
+								<Techstack techstacksvg={Techstacksvg7} />
+							</div>
+						</div>
+						<div data-content="Full-Stack" class="techstack-main ">
+							<div class="techstecks-list-area">
+								<Techstack techstacksvg={Sersvg1} />
+								<Techstack techstacksvg={Techstacksvg1} />
+								<Techstack techstacksvg={Techstacksvg2} />
+								<Techstack techstacksvg={Techstacksvg3} />
+								<Techstack techstacksvg={Techstacksvg4} />
+								<Techstack techstacksvg={Techstacksvg5} />
+								<Techstack techstacksvg={Techstacksvg6} />
+							</div>
+						</div>
+						<div data-content="Database" class="techstack-main ">
+							<div class="techstecks-list-area">
+								<Techstack techstacksvg={Sersvg1} />
+								<Techstack techstacksvg={Techstacksvg1} />
+								<Techstack techstacksvg={Techstacksvg2} />
+								<Techstack techstacksvg={Techstacksvg3} />
+								<Techstack techstacksvg={Techstacksvg4} />
+								<Techstack techstacksvg={Techstacksvg5} />
+								<Techstack techstacksvg={Techstacksvg6} />
+								<Techstack techstacksvg={Techstacksvg7} />
+								<Techstack techstacksvg={Sersvg1} />
+							</div>
+						</div>
+						<div data-content="Backend" class="techstack-main ">
+							<div class="techstecks-list-area">
+								<Techstack techstacksvg={Sersvg1} />
+								<Techstack techstacksvg={Techstacksvg1} />
+								<Techstack techstacksvg={Techstacksvg2} />
+								<Techstack techstacksvg={Techstacksvg3} />
+								<Techstack techstacksvg={Techstacksvg4} />
+								<Techstack techstacksvg={Techstacksvg5} />
+							</div>
+						</div>
+						<div data-content="Block-Chain" class="techstack-main ">
+							<div class="techstecks-list-area">
+								<Techstack techstacksvg={Sersvg1} />
+								<Techstack techstacksvg={Techstacksvg1} />
+								<Techstack techstacksvg={Techstacksvg2} />
+								<Techstack techstacksvg={Techstacksvg3} />
+								<Techstack techstacksvg={Techstacksvg4} />
+								<Techstack techstacksvg={Techstacksvg5} />
+								<Techstack techstacksvg={Techstacksvg6} />
+								<Techstack techstacksvg={Techstacksvg7} />
+							</div>
+						</div>
+					</div>
+					<div class="">
+						<div class="flex-btn-area">
+							<div class="">
+								<a href="#" class="primary-btn">
+									<span class="primary-btn-icon">
+										<i class="fa-solid fa-phone-volume"></i>
+									</span>
+									<span class="primary-btn-text">
+										123-123-0000
+									</span>
+								</a>
+							</div>
+							<div class="">
+								<a href="#" class="primary-btn btn-2">
+									<span class="primary-btn-icon">
+										<i class="fa-brands fa-rocketchat"></i>
+									</span>
+									<span class="primary-btn-text">
+										live chat
+									</span>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
