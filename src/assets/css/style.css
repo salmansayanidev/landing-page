@@ -6,7 +6,7 @@
 
 body {
   overflow-x: hidden;
-  background-color: var(--bg-blue);
+  background-color: white;
 }
 
 @font-face {
@@ -45,8 +45,7 @@ body {
 }
 
 html {
-  background-color: black;
-  font-size: 10px;
+    font-size: 10px;
 }
 
 .color-blue {
@@ -71,7 +70,7 @@ html {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 33;
+  z-index: 99;
   transition: 0.4s;
 }
 .header-active {
@@ -167,6 +166,7 @@ html {
   font-size: 3.2rem;
   font-family: var(--qanelas);
   font-weight: 400;
+  line-height: 1.3;
 }
 .sec-title {
   font-size: 4.3rem;
@@ -299,8 +299,8 @@ html {
   position: relative;
 }
 .our-ser-img {
-  position: relative;
-  z-index: 1;
+  transform: scale(1.3);
+  transform-origin: top;
 }
 .ser-lottie-img {
   position: absolute;
@@ -494,6 +494,8 @@ html {
   padding: 3rem 0;
   background: rgb(88,123,144);
   background: linear-gradient(94deg, rgba(88,123,144,1) 0%, rgba(17,44,145,1) 100%);
+  position: relative;
+  z-index: 22;
 }
 .hd-title-area {
   display: flex;
@@ -515,7 +517,7 @@ html {
     left: 50%;
     width: 910px;
     max-width: unset;
-    z-index: 11;
+    z-index: 33;
 }
 .hd-slider > .swiper-wrapper{
   transition-timing-function : linear;
@@ -528,6 +530,7 @@ html {
   background: rgb(199,200,202);
   background: linear-gradient(90deg, rgba(199,200,202,1) 0%, rgba(255,255,255,1) 100%);
   position: relative;
+  z-index: 11;
 }
 .techstack-img {
   position: absolute;
@@ -590,4 +593,109 @@ html {
 }
 .techstack-main.active {
   display: block;
+}
+
+/* our process */
+.our-process-section {
+  padding: 6rem 0;
+  background-color: white;
+}
+.our-pro-img-area {
+  position: relative;
+  margin-top: 30px;
+}
+/* .our-ser-img {
+  position: relative;
+  width: 608px;
+  max-width: unset;
+} */
+ .our-pro-area {
+  padding: 2.5rem 2rem;
+  border: 1px dashed #48AAAD;
+  max-width: 311px;
+  width: 100%;
+  border-radius: 3rem;
+  margin-top: 6rem;
+  position: relative;
+  z-index: 22;
+ }
+
+ .our-pro-right {
+  margin-left: auto;
+  text-align: right;
+ }
+ .our-pro-right .our-pro-svg {
+  right: unset;
+  left: 20px;
+ }
+ .our-pro-area::before {
+  content: " ";
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  transition: 0.4s;
+  z-index: -1 ;
+ }
+ .our-pro-area:hover::before {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 3rem;
+ }
+ .our-pro-area.our-pro-right:hover::before {
+  left: unset;
+  right: 0;
+ }
+ .our-pro-area.our-pro-right::before {
+  left: unset;
+  right: 20px;
+ }
+ .our-pro-svg {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+ }
+ .our-pro-area:hover .our-pro-svg {
+  filter: brightness(10);
+ }
+ .our-pro-no {
+  font-size: 8.7rem;
+  font-family: var(--qanelas);
+  font-weight: 700;
+  color: black;
+  opacity: 26%;
+ }
+ .our-pro-area:hover :where(.our-pro-no , .our-pro-title , .para-sm ) {
+  color: white !important;
+ } 
+ .our-pro-title {
+  font-size: 2.5rem;
+  font-family: var(--qanelas);
+  font-weight: 700;
+  color: var(--blue);
+ }
+ 
+ /* cost balance section */
+ .cta-section {
+  padding-top: 8rem;
+  background-color: white;
+ }
+ .cta-area {
+  background-image: url(../images/cta-reach-out-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8rem;
+  padding: 15rem 10rem;
+ }
+ .cta-vr-img {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  width: 615px;
+  max-width: unset;
 }
