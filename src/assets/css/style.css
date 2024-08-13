@@ -299,8 +299,8 @@ html {
   position: relative;
 }
 .our-ser-img {
-  transform: scale(1.3);
-  transform-origin: top;
+  position: relative;
+  z-index: 11;
 }
 .ser-lottie-img {
   position: absolute;
@@ -604,11 +604,10 @@ html {
   position: relative;
   margin-top: 30px;
 }
-/* .our-ser-img {
-  position: relative;
-  width: 608px;
-  max-width: unset;
-} */
+.our-pro-img {
+  transform: scale(1.3);
+  transform-origin: top;
+}
  .our-pro-area {
   padding: 2.5rem 2rem;
   border: 1px dashed #48AAAD;
@@ -698,4 +697,19 @@ html {
   right: 50px;
   width: 615px;
   max-width: unset;
+}
+.our-ser-brdr-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-46%, -80%);
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  transition: stroke-dashoffset 2s ease;
+}
+.our-pro-area:hover .our-ser-brdr-svg {
+  stroke-dashoffset: 0;
+}
+.our-pro-area.our-pro-right .our-ser-brdr-svg {
+  transform: translate(-53%, -80%);
 }
