@@ -44,6 +44,17 @@ body {
   --bg-blue : #383C71;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 html {
     font-size: 10px;
 }
@@ -683,6 +694,7 @@ html {
  .cta-section {
   padding-top: 8rem;
   background-color: white;
+  margin-bottom: 10rem;
  }
  .cta-area {
   background-image: url(../images/cta-reach-out-bg.png);
@@ -706,6 +718,7 @@ html {
   stroke-dasharray: 1200;
   stroke-dashoffset: 1200;
   transition: stroke-dashoffset 2s ease;
+  z-index: 1;
 }
 .our-pro-area:hover .our-ser-brdr-svg {
   stroke-dashoffset: 0;
