@@ -694,14 +694,15 @@ html {
  .cta-section {
   padding-top: 8rem;
   background-color: white;
-  margin-bottom: 10rem;
  }
  .cta-area {
   background-image: url(../images/cta-reach-out-bg.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   border-radius: 8rem;
   padding: 15rem 10rem;
+  box-shadow: 0 0 100px 0px #0000007d;
  }
  .cta-vr-img {
   position: absolute;
@@ -725,4 +726,104 @@ html {
 }
 .our-pro-area.our-pro-right .our-ser-brdr-svg {
   transform: translate(-53%, -80%);
+}
+
+/* reviews faqs section */
+
+.faqs-section {
+  padding: 40rem 0 10rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -310px;
+}
+.reviews-area {
+  max-width: 380px;
+  width: 100%;
+  margin: 0 auto;
+}
+.reviews-mb-img {
+  width: 100%;
+  max-width: 380px;
+}
+.review-ser-img {
+  height: 220px;
+  width: 220px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.reviews-slider-area {
+  position: absolute;
+  top: 50%;
+  width: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.review-user-name {
+  font-size: 3rem;
+  font-family: var(--qanelas);
+  font-weight: 600;
+  color: white;
+}
+.reviews-user-tag {
+  font-size: 2rem;
+  font-family: var(--qanelas);
+  font-weight: 500;
+  color: white;
+  display: block;
+}
+.review-para {
+  font-size: 2rem;
+  font-family: var(--qanelas);
+  font-weight: 400;
+  color: white;
+  line-height: 1.4;
+}
+.faq-box {
+  margin-bottom: 3.5rem;
+}
+
+.faq-btn {
+  font-size: 2.2rem;
+  font-family: var(--poppins);
+  font-weight: 600;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 2.5rem;
+  width: 100%;
+  background-color: var(--dusty-blue);
+  border: none;
+}
+.faq-icon {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 2rem;
+  color: var(--dusty-blue);
+  box-shadow: 0 10px 25px 0 #00000080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faq-text-area {
+  background-color: #587b908c;
+  padding: 3rem 2rem;
+  margin-top: -1px;
+}
+.faq-para {
+  font-size: 1.8rem;
+  font-family: var(--qanelas);
+  font-weight: 400;
+  color: white;
+  line-height: 1.4;
+}
+.faq-box.active .faq-btn {
+  background-color: var(--blue);
+}
+.faq-box.active .faq-text-area {
+  background-color: #6f90ff;
 }

@@ -61,6 +61,27 @@ var swiper = new Swiper(".logo-slider", {
   },
 });
 
+// review slider
+var swiper = new Swiper(".review-slider", {
+  slidesPerView: 1,
+  speed: 700,
+  loop: true,
+  spaceBetween: 60,
+  autoplay: {
+    delay: 2500,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".review-next",
+    prevEl: ".review-prev",
+  },
+});
+
+// techstack tabs js
+
 const detailTabs = document.querySelectorAll("[data-view]");
 
 detailTabs.forEach((tab) => {
@@ -72,4 +93,23 @@ detailTabs.forEach((tab) => {
     $(`[data-content="${tab.dataset.view}"]`).addClass("active");
     tab.classList.add("active");
   });
+});
+
+// faqs js
+
+$(".faq-text-area").hide();
+$(".faq-box.active").find(".faq-text-area").show();
+
+$(".faq-btn").click(function () {
+  var $currentFaqBox = $(this).closest(".faq-box");
+
+  if (!$currentFaqBox.hasClass("active")) {
+    $(".faq-text-area").slideUp();
+    $(".faq-box").removeClass("active");
+    $currentFaqBox.addClass("active");
+    $currentFaqBox.find(".faq-text-area").slideDown();
+  } else {
+    $currentFaqBox.removeClass("active");
+    $currentFaqBox.find(".faq-text-area").slideUp();
+  }
 });
