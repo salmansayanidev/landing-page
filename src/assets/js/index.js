@@ -1,9 +1,12 @@
 import $ from "jquery";
 import animationLottie from "./lottie-js/lottie";
-// import Ourserlottie from '../lottie/footer-lottie.json'
+import Footerlottie from '../lottie/footer-lottie.json'
 import Ourserlottie from "../lottie/ourser-lottie.json";
 
 animationLottie(Ourserlottie, ".our-ser-lottie");
+
+animationLottie(Footerlottie, ".footer-lottie");
+
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
@@ -113,3 +116,10 @@ $(".faq-btn").click(function () {
     $currentFaqBox.find(".faq-text-area").slideUp();
   }
 });
+
+
+// popup js
+
+$('.popup-btn').click(function() {
+  $('.popup-wrap').toggleClass('active')
+})
