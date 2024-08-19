@@ -1,0 +1,67 @@
+--- 
+
+import { Image } from 'astro:assets';
+
+import footerimg1 from '../assets/images/popup-img-1.png'
+import footerimg2 from '../assets/images/popup-img-2.png'
+import footerimg3 from '../assets/images/popup-img-3.png'
+
+
+---
+
+<div class="popup-wrap">
+    <div class="popup-area">
+        <div class="row">
+            <div class="col-12 col-lg-3">
+                <div class="position-relative">
+                    <Image src={footerimg1} class={'img-fluid popup-img-1'} alt={'popup mb img'} />
+                </div>
+            </div>
+            <div class="col-12 col-lg-9">
+                <div class="popup-right-area position-relative">
+                    <button type="button" class="popup-cls-bts popup-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <Image src={footerimg3} class={'img-fluid popup-img-3'} alt={'footer angle img'} />
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="position-relative">
+                                <h1 class="sec-title line-height-1 color-blue-2">Get <span class="color-blue">$3000</span> Worth of <span class="color-blue">FREE</span> Mockups & Prototype</h1>
+                                <Image src={footerimg2} class={'img-fluid popup-img-2'} alt={'popup vr img'} /> 
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p class="para-sm dusty-blue">Fill out form below with your details to start conversation with our expert.</p>
+                            <form action="">
+                                <div class="popup-form-area">
+                                    <div class="footer-field popup-field">
+                                        <input class="footer-input popup-input" type="text" required placeholder=" name" name="" id="">
+                                    </div>
+                                    <div class="footer-field popup-field">
+                                        <input class="footer-input popup-input" type="email" required placeholder=" email" name="" id="">
+                                    </div>
+                                    <div class="footer-field popup-field">
+                                        <input class="footer-input popup-input" type="number" required placeholder=" phone" name="" id="">
+                                    </div>
+                                    <div class="footer-field popup-field">
+                                        <textarea class="footer-input  popup-input" placeholder="message" name="" id=""></textarea>
+                                    </div>
+                                    <div class="mt-5">
+                                        <button class="primary-btn border-blue  bg-transparent" type="submit">
+                                            <span class="primary-btn-icon">
+                                                <i class="fa-solid fa-question"></i>
+                                            </span>
+                                            <span class="primary-btn-text color-blue">
+                                                Submit Now
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

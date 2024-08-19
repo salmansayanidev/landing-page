@@ -1,0 +1,81 @@
+---
+
+import { getImage } from 'astro:assets';
+
+import Footerbg from '../assets/images/footer-bg.png'
+const Footerbgimg = await getImage({src: Footerbg})
+---
+
+<footer class="footer" style=`background-image: url(${Footerbgimg.src});`>
+    <div class="footer-container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="footer-area">
+                    <h1 class="sec-title text-white mb-4">Ready for Some Fun Discussion?</h1>
+                    <p class="para-sm text-white mb-5 font-poppins line-height-15">Our Business Consultants are amazing people to talk to – They are cool and full of ideas.</p>
+                    <a class="footer-link mb-4 text-decoration-none text-white d-flex justify-content-start align-items-center gap-4" href="#">
+                        <span class=""><i class="fa-solid fa-phone-volume"></i></span>
+                        <span class="">855-540-8764</span>
+                    </a>
+                    <a class="footer-link mb-4 text-decoration-none text-white d-flex justify-content-start align-items-center gap-4" href="#">
+                        <span class=""><i class="fa-solid fa-envelope-circle-check"></i></span>
+                        <span class="">connect@appdesignglory.com</span>
+                    </a>
+                    <address class="footer-link text-white"><strong>Head Office: </strong>1401 Lavaca Street, Austin, TX 78701</address>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="footer-lottie-area position-relative">
+                    <div class="footer-lottie"></div>    
+                </div>                
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="footer-area">
+                    <h1 class="sec-title text-white">We love coming up with fresh ideas and bringing them to reality!</h1>
+                    <p class="para-sm text-white mt-4 mb-5 font-poppins">Do you want to make something big? Let our website builders know as soon as possible!</p>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="footer-field">
+                                    <input class="footer-input mb-4" type="text" required placeholder="first name" name="" id="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="footer-field">
+                                    <input class="footer-input mb-4" type="text" required placeholder="last name" name="" id="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="footer-field">
+                                    <input class="footer-input mb-4" type="email" required placeholder="email" name="" id="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="footer-field">
+                                    <input class="footer-input mb-4" type="number" required placeholder="phone number" name="" id="">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="footer-field">
+                                    <textarea class="footer-input mb-5" required placeholder="talk about your project" name="" id=""></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex justify-content-center">
+                                    <button class="primary-btn bg-transparent" type="submit">
+                                        <span class="primary-btn-icon">
+                                            <i class="fa-solid fa-question"></i>
+                                        </span>
+                                        <span class="primary-btn-text">
+                                            Get a Quote
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
