@@ -1,0 +1,223 @@
+@media (max-width: 1700px) {
+    .bnner-slider-btn-area {
+        right: 5vw;
+    }    
+}
+
+@media (max-width: 1600px) {
+    .bnner-slider-btn-area {
+        right: 3vw;
+    }
+}
+
+@media (max-width: 1560px) {
+    html {
+        font-size: 9px;
+    }
+    .bnner-slider-btn-area {
+        right: unset;
+        bottom: 40px;
+        flex-direction: row;
+        top: unset;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .our-pro-img {
+        transform: scale(1.2);
+    }
+    .our-pro-area {
+        padding: 3.5rem 2rem;
+    }
+    .cta-section {
+        padding-top: 12rem;
+    }
+    .consult-img {
+        width: 600px;
+    }
+    .our-ser-brdr-svg {
+        transform: translate(-45%, -80%);
+        width: 380px;
+    }
+    .our-pro-area.our-pro-right .our-ser-brdr-svg {
+        transform: translate(-55%, -80%);
+    }
+    .ser-svg {
+        top: 15px;
+        right: 15px;
+    }
+    .service-box::after {
+        height: 115px;
+        width: 115px;
+    }
+    .results-section {
+        padding: 0 0 13rem;
+    }
+    .reviews-area {
+        max-width: 350px;
+    }
+    .reviews-mb-img {
+        max-width: 350px;
+    }
+    .our-ser-img {
+        width: 360px;
+    }
+    .ser-lottie-img {
+        width: 630px;
+    }
+      
+
+    .our-pro-svg {
+        width: 45px;
+    }
+    
+}
+
+@media (max-width: 1399px) {
+    html {
+        font-size: 8px;
+    }
+    .footer {
+        padding: 6rem 7rem;
+    }
+    .techstack-area {
+        height: 155px;
+        width: 155px;
+    }
+    .our-pro-img {
+        transform: scale(1.16);
+    }
+    .primary-btn-text {
+        padding: 1rem 1.5rem 1rem 1.5rem;
+    }
+    .logo-area {
+        max-width: 270px;
+    }   
+    .primary-btn {
+        height: 40px;
+    }
+    .primary-btn-icon {
+        height: 40px;
+        width: 40px;
+    }
+    .img-fluid.brand-logo {
+        max-width: 120px;
+    }
+    .our-ser-img {
+        max-width: 290px;
+    }
+    .ser-lottie-img {
+        width: 500px;
+    }
+    .ser-svg {
+        width: 45px;
+    }
+    .service-box::after {
+        height: 100px;
+        width: 100px;
+    }
+    .cta-section {
+        padding-top: 17rem;
+    }
+    .cta-area {
+        padding: 15rem 5rem;
+    }
+    .cta-vr-img {
+        width: 560px;
+    }
+    .review-ser-img {
+        height: 170px;
+        width: 170px;
+    }
+    .reviews-area {
+        max-width: 320px;
+    }
+    .reviews-mb-img {
+        max-width: 320px;
+    }
+    .faqs-section {
+        padding: 42rem 0 10rem;
+        margin-top: -260px;
+    }
+    .our-pro-area::before {
+        width: 25px;
+        height: 25px;
+    }
+    .our-ser-brdr-svg {
+        transform: translate(-46%, -72%);
+        width: 390px;
+    }
+    .our-pro-area.our-pro-right .our-ser-brdr-svg {
+        transform: translate(-55%, -72%);
+    }
+    .consult-img {
+        width: 530px;
+        transform: translateY(-25%) translateX(-53%);
+    }
+}
+
+@media (max-width: 1199px) {
+    html {
+        font-size: 7px;
+    }
+    .consult-img {
+        width: 440px;
+        transform: translateY(-23%) translateX(-50%);
+    }
+    .bnner-slider-btn {
+        height: 35px;
+        width: 35px;
+    }
+    .logo-area {
+        max-width: 240px;
+    }
+    .img-fluid.brand-logo {
+        max-width: 100px;
+    }
+    
+
+
+    .our-pro-area.our-pro-right .our-ser-brdr-svg {
+        transform: translate(-55%, -68%);
+    }
+    .our-ser-brdr-svg {
+        transform: translate(-45%, -68%);
+        width: 340px;
+    }
+    .faqs-section {
+        margin-top: -240px;
+    }
+    .our-pro-area {
+        padding: 20px 15px;
+        max-width: 270px;
+        margin-top: 50px;
+    }
+    .techstack-btn-area {
+        width: 18%;
+    }
+    .techstack-tab-btn {
+        padding: 8px 10px;
+    }
+    .techstecks-list-area {
+        gap: 50px 40px;
+    }
+    .techstack-area {
+        height: 135px;
+        width: 135px;
+    }
+    .our-pro-area.our-pro-right::before {
+        right: 10px;
+    }
+    .our-pro-area::before {
+        width: 20px;
+        height: 20px;
+        left: 10px;
+        top: 5px;
+    }
+    .cta-vr-img {
+        width: 500px;
+        right: 20px;
+    }
+    .form-field {
+        max-width: 270px;
+    }
+}
